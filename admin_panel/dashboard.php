@@ -99,10 +99,6 @@
 			</div>
 		</div>
 		<!-- end side bar coding -->
-
-		<script>
-			const root = "<?= ROOT ?>";
-		</script>
 		<script type="text/javascript" src="<?= ROOT ?>admin_panel/script/admin.js"></script>
 		<script type="text/javascript" src="<?= ROOT ?>common/js/chart.min.js"></script>
 	</body>

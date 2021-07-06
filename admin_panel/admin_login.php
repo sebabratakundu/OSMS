@@ -2,7 +2,7 @@
 	require_once "../assets/database.php";
 	session_start();
 	if(isset($_SESSION["admin"])){
-		header("Location:<?= ROOT ?>admin_panel/dashboard.php");
+		header("Location:".ROOT."admin_panel/dashboard.php");
 			exit;
 	}
 ?>

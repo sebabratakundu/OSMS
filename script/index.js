@@ -1,3 +1,5 @@
+const root = "http://"+window.location.hostname+"/";
+
 // start registration coding
 
 $(document).ready(function(){

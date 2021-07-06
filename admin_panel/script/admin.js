@@ -1,3 +1,5 @@
+const root = "http://"+window.location.hostname+"/";
+
 // start admin login coding
 
 $(document).ready(function(){

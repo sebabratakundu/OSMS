@@ -1,3 +1,5 @@
+const root = "http://"+window.location.hostname+"/";
+
 // start dynamic design page appear coding
 
 $(document).ready(function(){

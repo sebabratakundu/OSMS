@@ -90,9 +90,6 @@
 
 
 	<!-- end side bar coding -->
-	<script>
-		const root = "<?= ROOT ?>";
-	</script>
 	<script type="text/javascript" src="<?= ROOT ?>user/script/profile.js"></script>
 </body>
 </html>

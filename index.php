@@ -132,9 +132,6 @@
 
 		<!-- end footer  coding -->
 		</div>
-		<script>
-			const root = "<?= ROOT ?>";
-		</script>
 		<script type="text/javascript" src="<?= ROOT ?>script/index.js"></script>
 	</body>
 </html>
