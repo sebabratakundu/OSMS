@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+*{
+	box-sizing: border-box;
+}
+
+*:focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.font-gothic{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.font-poppins{
+	font-family: 'Poppins', sans-serif;
+}
+
+.font-monsserat{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.font-roboto{
+	font-family: 'Roboto', sans-serif;
+}
+
+.font-lato{
+	font-family: 'Lato', sans-serif;
+}
+
+.navbar{
+	background:#192A56;
+}
+
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #12343b; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.page {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  margin-right: 50px;
+  padding: 0px 10px;
+}
+
+.sidebar .btn{
+	color:white;
+}
+
+.sidebar .btn.active{
+	background:#e6e6e6;
+	border-radius: 0;
+	color:#1c1c1c;
+	font-weight: 600;
+}
+
+.logout-btn{
+	text-decoration: none !important;
+}

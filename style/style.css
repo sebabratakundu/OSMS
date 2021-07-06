@@ -1,0 +1,84 @@
+@charset "urf-8";
+
+
+*{
+	box-sizing: border-box;
+}
+
+.font-gothic{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.font-poppins{
+	font-family: 'Poppins', sans-serif;
+}
+
+.font-monsserat{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+	background:#192A56;
+}
+
+/*start header coding*/
+
+.page-header{
+	width:100%;
+	height:100vh;
+	background-image: url("../common/images/bg1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.header-box{
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+	padding-top: 250px;
+	padding-left: 100px;
+}
+
+.sign-in-btn a,.sign-up-btn a{
+	text-decoration: none;
+	color: white;
+}
+
+.sign-in-btn{
+	background: #EA7773;
+}
+
+.sign-up-btn{
+	background: #01CBC6;
+}
+
+/*end header coding*/
+
+/*start section coding*/
+
+.our-service-icons i{
+	font-size:80px;
+}
+
+/*end section coding*/
+
+/*start customer review coding*/
+
+.happy-customer{
+	background: #192A56;
+}
+
+/*end customer review coding*/
+
+/*start footer coding*/
+
+.footer{
+	background: #192A56 !important;
+}
+
+.footer i{
+	color:#DC3545;
+}
+
+/*end footer coding*/

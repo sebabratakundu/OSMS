@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^signin$ assets/login_design.php
+
+RewriteRule ^profile$ user/profile.php
+
+RewriteRule ^admin-login$ admin_panel/admin_login.php
+
+RewriteRule ^dashboard$ admin_panel/dashboard.php
+
+DirectoryIndex index.php
+
+Options -Indexes
