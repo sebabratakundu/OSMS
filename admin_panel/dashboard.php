@@ -23,6 +23,8 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="<?= ROOT ?>common/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="<?= ROOT ?>common/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
 		<link rel="stylesheet" href="<?= ROOT ?>admin_panel/css/style.css">
 		<link rel="stylesheet" href="<?= ROOT ?>admin_panel/css/style_responsive.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,7 +48,7 @@
 		<!-- end navbar coding -->
 		<!-- start side bar coding -->
 		
-		<div class="container-fluid m-0 p-0 main-body" style="margin-top:">
+		<div class="container-fluid m-0 p-0 main-body">
 			<div class="sidebar shadow-lg d-print-none">
 				<h3 class="text-center text-white font-gothic">OSMS</h3>
 				<h6 class="text-danger text-center text-capitalize font-monsserat"><?php echo $name;?></h6>
@@ -101,5 +103,12 @@
 		<!-- end side bar coding -->
 		<script type="text/javascript" src="<?= ROOT ?>admin_panel/script/admin.js"></script>
 		<script type="text/javascript" src="<?= ROOT ?>common/js/chart.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-const root = "http://"+window.location.hostname+"/";
+const root = window.location.hostname == "localhost" ? "http://"+window.location.hostname+"/service_managment_system/" : "http://"+window.location.hostname+"/";
 
 // start admin login coding
 
@@ -87,7 +87,6 @@ function page_request(request_url){
 		},
 		success : function(response){
 			$(".page").html(response);
-
 			if(request_url == "dashboard_design.php"){
 				dashboard_features();
 			}
@@ -130,8 +129,13 @@ function page_request(request_url){
 //end page request coding
 
 function dashboard_features(){
+	$(".table").dataTable({
+		dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+	});
 	// no of requests,assigned work,and tech
-
 	$.ajax({
 			type : "POST",
 			url : root+"admin_panel/php/update_nos.php",
@@ -372,6 +376,13 @@ function work_order(){
 					$("#work-order-tbody").append(tr);
 				}
 
+				$(".work-order-table").dataTable({
+					dom: 'Bfrtip',
+					buttons: [
+						'copy', 'csv', 'excel', 'pdf', 'print'
+					]
+				});
+
 				// view details coding
 
 					$(".view-details-btn").each(function(){
@@ -471,6 +482,12 @@ function work_order(){
 // start requester coding
 
 function requester(){
+	$(".table").dataTable({
+		dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+	});
 	$(".add-user-btn").hover(function(){
 		$(this).addClass("pulse animated");
 	},
@@ -687,6 +704,12 @@ function requester(){
 // start technician coding
 
 function technician(){
+	$(".table").dataTable({
+		dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+	});
 	$(".add-tech-btn").hover(function(){
 		$(this).addClass("pulse animated");
 	},
@@ -896,7 +919,12 @@ function technician(){
 // start asset coding
 
 function asset(){
-
+	$(".table").dataTable({
+		dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+	});
 	$(".add-product-btn").hover(function(){
 		$(this).addClass("pulse animated");
 	},
@@ -1273,6 +1301,12 @@ function sales_report(){
 								$(".sales-report-tbody").append(tr);
 							}
 
+							$(".table").dataTable({
+								dom: 'Bfrtip',
+								buttons: [
+									'copy', 'csv', 'excel', 'pdf', 'print'
+								]
+							});
 							// print sales report
 
 							$(".print-sales-report-btn").click(function(){
@@ -1370,7 +1404,12 @@ function work_report(){
 								tr.append(td8);
 								$(".work-report-tbody").append(tr);
 							}
-
+							$(".table").dataTable({
+								dom: 'Bfrtip',
+								buttons: [
+									'copy', 'csv', 'excel', 'pdf', 'print'
+								]
+							});
 							// print sales report
 
 							$(".print-work-report-btn").click(function(){

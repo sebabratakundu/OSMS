@@ -1,4 +1,4 @@
-const root = "http://"+window.location.hostname+"/";
+const root = window.location.hostname == "localhost" ? "http://"+window.location.hostname+"/service_managment_system/" : "http://"+window.location.hostname+"/";
 
 // start dynamic design page appear coding
 

@@ -81,7 +81,7 @@
   </div>
 				<h3 class="font-gothic text-center mb-3 d-print-none">Work Orders</h3>
 					<div class="table-responsive">
-						<table class="table table-bordered table-striped d-print-none">
+						<table class="work-order-table table table-bordered table-striped d-print-none">
 								<thead class="text-center">
 									<tr>
 										<th>Request ID</th>
