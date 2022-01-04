@@ -1,4 +1,4 @@
-const root = window.location.hostname == "localhost" ? "http://"+window.location.hostname+"/service_managment_system/" : "http://"+window.location.hostname+"/";
+const root = window.location.hostname == "localhost" ? "http://"+window.location.hostname+"/service_managment_system/" : "https://"+window.location.hostname+"/";
 
 // start admin login coding
 
