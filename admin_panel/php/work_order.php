@@ -1,33 +1,33 @@
 <?php
-	class work_order{
-		private $query;
-		private $result;
-		private $db;
-		private $data;
-		private $all_data = [];
+require_once("../../assets/database.php");
 
-		function __construct(){
-			require_once("../../assets/database.php");
-			$this -> db = new db();
-			$this -> db = $this -> db -> __construct();
+class work_order
+{
+	private $query;
+	private $result;
+	private $db;
+	private $data;
+	private $all_data = [];
 
-			$this -> query = $this -> db -> prepare("SELECT * FROM assignwork_table");
-			$this -> query -> execute();
-			$this -> result = $this -> query -> get_result();
-			$this -> query -> close();
-			if($this -> result -> num_rows !=0){
-				while($this -> data = $this -> result -> fetch_assoc()){
-					array_push($this -> all_data, $this -> data);
-				}
+	function __construct()
+	{
+		$this->db = new db();
+		$this->db = $this->db->__construct();
 
-				echo json_encode($this -> all_data);
+		$this->query = $this->db->prepare("SELECT * FROM assignwork_table");
+		$this->query->execute();
+		$this->result = $this->query->get_result();
+		$this->query->close();
+		if ($this->result->num_rows != 0) {
+			while ($this->data = $this->result->fetch_assoc()) {
+				array_push($this->all_data, $this->data);
 			}
-			else{
-				echo "no work assigned";
-			}
+
+			echo json_encode($this->all_data);
+		} else {
+			echo "no work assigned";
 		}
 	}
+}
 
-	new work_order();
-
-?>
+new work_order();
