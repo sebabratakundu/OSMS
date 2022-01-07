@@ -1,6 +1,6 @@
 <?php
-	
-	
+
+
  echo '<div class="container my-5">
 					<div class="row">
 						<div class="card-columns w-100 text-center text-white mb-5">
@@ -61,7 +61,7 @@
 										require_once("../../assets/database.php");
 										$this -> db = new db();
 										$this -> db = $this -> db -> __construct();
-										$this -> query = $this -> db -> prepare("SELECT id,name,username,status,reg_date FROM user");
+										$this -> query = $this -> db -> prepare("SELECT id,name,username,status,reg_date FROM user ORDER BY DESC");
 										$this -> query -> execute();
 										$this -> result = $this -> query -> get_result();
 										$this -> query -> close();
