@@ -10,6 +10,12 @@
 			$this -> db = new db();
 			$this -> db = $this -> db -> __construct();
 
+			if ($_SERVER['HTTP_HOST'] != 'localhost')
+			{
+				echo 'update failed';
+				die();
+			}
+
 			session_start();
 			$this -> username = trim($_SESSION["admin"]);
 
