@@ -140,7 +140,6 @@ function dashboard_features(){
 			type : "POST",
 			url : root+"admin_panel/php/update_nos.php",
 			success : function(response){
-				console.log(response);
 				var all_data = JSON.parse(response);
 				$(".no-of-req").html(all_data[0]);
 				$(".no-of-assigned-work").html(all_data[1]);
@@ -500,7 +499,6 @@ function requester(){
 	$(document).ready(function(){
 		$(".edit-user-btn").each(function(){
 			$(this).click(function(){
-				alert();
 				var user_id = atob($(this).attr("user-id"));
 				var name = atob($(this).attr("name"));
 				var username = atob($(this).attr("username"));
@@ -1261,7 +1259,6 @@ function sales_report(){
 						if(response.trim() != "failed"){
 							$(".sales-report-tbody").html("");
 							var all_data = JSON.parse(response);
-							console.log(all_data);
 							$(".sales-report-table").removeClass("d-none");
 							var i;
 							for(i=0;i<all_data.length;i++){
@@ -1371,7 +1368,6 @@ function work_report(){
 						if(response.trim() != "failed"){
 							$(".work-report-tbody").html("");
 							var all_data = JSON.parse(response);
-							console.log(all_data);
 							$(".work-report-table").removeClass("d-none");
 							var i;
 							for(i=0;i<all_data.length;i++){
