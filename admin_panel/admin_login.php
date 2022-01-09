@@ -36,12 +36,12 @@
 							<form class="admin-signin-form font-monsserat">
 								<div class="form-group">
 									<label for="username"><i class="fa fa-user mr-2"></i>Username</label>
-									<input type="email" name="username" id="username" required="required" class="form-control">
+									<input type="email" name="username" id="username" required="required" class="form-control" value="admin@osms.com">
 									<small class="text-info">we will never share your your email with anyone else</small>
 								</div>
 								<div class="form-group">
 									<label for="password"><i class="fa fa-key mr-2"></i>Password</label>
-									<input type="password" name="password" id="password" required="required" class="form-control">
+									<input type="password" name="password" id="password" required="required" class="form-control" value="admin">
 								</div>
 								<button class="btn btn-outline-danger btn-block mt-5 mb-3 py-2 admin-signin-btn" type="submit">SIGN IN</button>
 							</form>
